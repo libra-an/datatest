@@ -1,8 +1,13 @@
 {
   "name": "App-data-test",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "description": "Ung dung kiem tra tai khoan",
   "main": "main.js",
   "author": "libra-an",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libra-an/datatest.git"
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
@@ -26,8 +31,12 @@
       }
     ],
     "win": {
-      "target": ["nsis"],
-      "publish": ["github"]
+      "target": [
+        "nsis"
+      ],
+      "publish": [
+        "github"
+      ]
     },
     "nsis": {
       "oneClick": false,
